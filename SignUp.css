@@ -1,10 +1,8 @@
 body {
-   height: 100%;
-   overflow-y: hidden;
-   overflow: hidden;
-   overscroll-behavior: none;
-   overscroll-behavior-y: none;
-   -webkit-overflow-scrolling: auto;
+  background-image: url("images/test.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .wrapgrid{
   overflow-x: hidden;
@@ -16,8 +14,8 @@ body {
 
 .u-section-1 .u-image-1 {
   height: 700px;
-  margin-top: 101px;
-  margin-bottom: 0;
+  margin-top: 40px;
+  margin-bottom: -593px;
 }
 
 .u-section-1 .u-image-2 {
@@ -259,7 +257,7 @@ body {
 }
 @media (max-width: 2000px) {
   .u-section-1 .u-image-1 {
-    margin-top: 139px;
+    margin-top: 139px; 
   }
 
   .u-section-1 .u-image-2 {
@@ -600,7 +598,7 @@ body {
   }
 
   .u-section-1 .u-image-1 {
-    margin-top: 14px;
+     margin-top: 14px; 
   }
 
   .u-section-1 .u-image-2 {
