@@ -1,0 +1,25 @@
+body {
+  height: 100%;
+  overflow-y: hidden;
+  overflow: hidden;
+  overscroll-behavior: none;
+  overscroll-behavior-y: none;
+}
+.u-section-1 {
+  min-height: 721px;
+}
+
+.u-section-1 .u-image-1 {
+  object-position: 49.57% 50%;
+}
+
+.u-section-1 .u-btn-1 {
+  font-size: 1.125rem;
+  margin: 379px auto 60px;
+  padding: 0;
+}
+
+.u-section-1 .u-icon-1 {
+  font-size: 2.2em;
+  top: -114px;
+}

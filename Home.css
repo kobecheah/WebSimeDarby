@@ -1,0 +1,148 @@
+body {
+  height: 100%;
+  overflow-y: hidden;
+  overflow: hidden;
+  overscroll-behavior: none;
+  overscroll-behavior-y: none;
+}
+.u-section-1 .u-sheet-1 {
+  min-height: 712px;
+}
+
+.u-section-1 .u-image-1 {
+  width: 233px;
+  height: 243px;
+  margin: 86px auto 0;
+}
+
+.u-section-1 .u-btn-1 {
+  border-style: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.u-section-1 .u-icon-1 {
+  font-size: 3.375em;
+}
+
+.u-section-1 .u-icon-2 {
+  font-size: 3.375em;
+  height: 55px;
+  width: 235px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.u-section-1 .u-image-2 {
+  width: 300px;
+  height: 0;
+  margin: 31px auto 0;
+}
+
+.u-section-1 .u-image-3 {
+  width: 115px;
+  height: 26px;
+  margin: 98px auto 0;
+}
+
+.u-section-1 .u-image-4 {
+  width: 170px;
+  height: 29px;
+  margin: 0 auto 58px;
+}
+
+@media (max-width: 1199px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 700px;
+  }
+
+  .u-section-1 .u-icon-2 {
+    font-size: 3.375rem;
+  }
+
+  .u-section-1 .u-image-4 {
+    margin-bottom: 45px;
+  }
+}
+
+@media (max-width: 2000px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 674px;
+  }
+
+  .u-section-1 .u-image-1 {
+    margin-top: 60px;
+  }
+
+  .u-section-1 .u-image-3 {
+    margin-top: 95px;
+  }
+
+  .u-section-1 .u-image-4 {
+    margin-bottom: 49px;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 660px;
+  }
+
+  .u-section-1 .u-image-1 {
+    margin-top: 65px;
+  }
+
+  .u-section-1 .u-btn-1 {
+    margin-top: 14px;
+  }
+
+  .u-section-1 .u-icon-2 {
+    height: 54px;
+  }
+
+  .u-section-1 .u-image-3 {
+    margin-top: 70px;
+  }
+
+  .u-section-1 .u-image-4 {
+    margin-bottom: 42px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 637px;
+  }
+
+  .u-section-1 .u-image-1 {
+    margin-top: 64px;
+  }
+
+  .u-section-1 .u-btn-1 {
+    margin-top: 0;
+  }
+
+  .u-section-1 .u-icon-1 {
+    font-size: 3.125em;
+  }
+
+  .u-section-1 .u-icon-2 {
+    height: 51px;
+    width: 218px;
+  }
+
+  .u-section-1 .u-image-2 {
+    margin-top: 42px;
+  }
+
+  .u-section-1 .u-image-3 {
+    margin-top: 76px;
+  }
+
+  .u-section-1 .u-image-4 {
+    margin-bottom: 26px;
+  }
+}
