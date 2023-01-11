@@ -1,3 +1,4 @@
+
 body {
   height: 100%;
   overflow-y: hidden;
@@ -5,8 +6,18 @@ body {
   overscroll-behavior: none;
   overscroll-behavior-y: none;
 }
+.WrapBody {
+  background-image: url('./images/HomeBG.png');
+  background-attachment:scroll;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  background-position: top;
+
+}
 .u-section-1 .u-sheet-1 {
-  min-height: 712px;
+  margin-top: 60%;
 }
 
 .u-section-1 .u-image-1 {
@@ -56,7 +67,6 @@ body {
 
 @media (max-width: 1199px) {
   .u-section-1 .u-sheet-1 {
-    min-height: 700px;
   }
 
   .u-section-1 .u-icon-2 {
@@ -70,7 +80,6 @@ body {
 
 @media (max-width: 2000px) {
   .u-section-1 .u-sheet-1 {
-    min-height: 674px;
   }
 
   .u-section-1 .u-image-1 {
@@ -88,7 +97,6 @@ body {
 
 @media (max-width: 767px) {
   .u-section-1 .u-sheet-1 {
-    min-height: 660px;
   }
 
   .u-section-1 .u-image-1 {
@@ -114,7 +122,6 @@ body {
 
 @media (max-width: 575px) {
   .u-section-1 .u-sheet-1 {
-    min-height: 637px;
   }
 
   .u-section-1 .u-image-1 {
