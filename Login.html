@@ -23,350 +23,363 @@
 </head>
 
 <body class="u-body u-xl-mode" data-lang="en">
-  <div id='treasure-hunt-content' style="display: block">
-    <section class="u-clearfix u-section-1" id="sec-bda4">
-      <img
-        class="u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-image u-image-contain u-image-default u-image-1"
-        src="images/Registerpagebgframe.png" alt="" data-image-width="948" data-image-height="1348">
-      <img style="top: 12px;" class="u-image u-image-contain u-image-default u-image-2" src="images/MainLogo.png" alt=""
-        data-image-width="733" data-image-height="388">
-      <div class="u-form u-form-1">
-        <form action="#" method="POST" class="u-clearfix u-form-spacing-6 u-form-vertical u-inner-form" source="email"
-          name="form" style="padding: 0px;">
-          <div class="u-form-group u-form-name u-label-none">
-            <label for="name-de45" class="u-label"></label>
-            <input id="passwordBtn" type="password" placeholder="Password" id="name-de45" name="password"
-              class="u-custom-font u-heading-font u-input u-input-rectangle u-radius-50 u-text-custom-color-2 u-white u-input-1"
-              required="">
-          </div>
-        </form>
-      </div>
-      <div class="u-form u-form-2">
-        <form action="#" method="POST" class="u-clearfix u-form-spacing-0 u-form-vertical u-inner-form" source="email"
-          name="form" style="padding: 0px;">
-          <div class="u-form-group u-form-name u-label-none">
-            <label for="name-de45" class="u-label"></label>
-            <input placeholder="Email" type="email" id="name-de45" name="email"
-              class="u-custom-font u-heading-font u-input u-input-rectangle u-radius-50 u-text-custom-color-2 u-white u-input-2"
-              required="">
-          </div>
-        </form>
-      </div>
-      <div class="u-form u-form-3">
-        <form action="#" method="POST" class="u-clearfix u-form-spacing-0 u-form-vertical u-inner-form" source="email"
-          name="form-1" style="padding: 0px;">
-          <div class="u-form-checkbox u-form-group u-form-group-3">
-            <input style="height: 9px;" type="checkbox" id="checkbox-ad46" name="checkbox" value="On" checked="checked">
-            <label for="checkbox-ad46" class="u-label u-label-3">Remember Me</label>
-          </div>
-        </form>
-        <div id="passError"
-          style="color: red; font-size: 12px; font-weight: 600; margin-left: -3px; height: 19px; margin-top: 12px;"
-          class="error-message-pass"></div>
-      </div>
-      <h5 class="u-text u-text-custom-color-4 u-text-default-xs u-text-2"></h5>
-      <a style="top: 8px;" onclick="Submit()" type="submit" value="submit" name="submit"
-        class="u-align-center-xs u-border-none u-btn u-button-style u-none u-btn-1"><span
-          class="u-file-icon u-icon u-icon-1"><img 
-            src="images/loginnowbutton.png"></span></a>
-      <img id="passImg" onclick="ShowPass();" class="u-image u-image-contain u-image-default u-image-3"
-        src="images/Element1.png" style="top:-3px;" alt="" data-image-width="71" data-image-height="41">
-      <a href="./ForgotPassword.html" class="u-text u-text-custom-color-4 u-text-1">Forgot Password</a>
-
-    </section>
-
-    <section
-      class="u-black u-clearfix u-container-style u-dialog-block u-opacity u-opacity-55 u-valign-middle-lg u-valign-middle-xl u-dialog-section-4"
-      id="sec-b5d3" data-dialog-show-on="page_exit" data-dialog-show-interval="3000"
-      data-dialog-show-on-list="161976806">
-      <div
-        class="u-align-justify-xs u-align-left-lg u-align-left-md u-align-left-sm u-align-left-xl u-container-style u-dialog u-opacity u-opacity-5 u-shape-rectangle u-white u-dialog-1">
-        <div class="u-container-layout u-valign-top-lg u-valign-top-xl u-container-layout-1">
-          <img
-            class="u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-image u-image-contain u-image-default u-image-1"
-            src="images/verifyemailbgframe.png" alt="" data-image-width="904" data-image-height="808">
-          <img class="u-image u-image-contain u-image-default u-image-2" src="images/tickicom.png" alt=""
-            data-image-width="276" data-image-height="248">
-          <a style="width: 100px;" class="u-border-none u-btn u-button-style u-none u-btn-1"><span
-              class="u-file-icon u-icon u-icon-1"><img src="images/clicktoplaybutton.png" style="width: 149px;"
-                onclick="OpenApp();" alt=""></span>&nbsp;
-          </a>
-          <h6 style="font-size: 18px;top: 9px;"
-            class="u-align-center-md u-align-center-sm u-align-center-xs u-text u-text-1">Login Suc​cessful</h6>
-          <h6 class="u-align-center-md u-align-center-sm u-align-center-xs u-text u-text-2"
-            style=" font-size: 16px;width: 280px;height: 19px;left: 28px;">Your account has been successfully logged in
-          </h6>
+  <div class="WrapBody">
+    <div id='treasure-hunt-content' style="display: block">
+      <section class="u-clearfix u-section-1" id="sec-bda4">
+        <img
+          class="u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-image u-image-contain u-image-default u-image-1"
+          src="images/Registerpagebgframe.png" alt="" data-image-width="948" data-image-height="1348">
+        <!-- <img style="top: 12px;" class="u-image u-image-contain u-image-default u-image-2" src="images/MainLogo.png" alt=""
+        data-image-width="733" data-image-height="388"> -->
+        <div class="u-form u-form-1">
+          <form action="#" method="POST" class="u-clearfix u-form-spacing-6 u-form-vertical u-inner-form" source="email"
+            name="form" style="padding: 0px;">
+            <div class="u-form-group u-form-name u-label-none">
+              <label for="name-de45" class="u-label"></label>
+              <input id="passwordBtn" type="number" placeholder="Contact No" id="name-de45" name="contact"
+                class="u-custom-font u-heading-font u-input u-input-rectangle u-radius-50 u-text-custom-color-2 u-white u-input-1"
+                required="">
+            </div>
+          </form>
         </div>
-    </section>
-
-    <section
-      class="u-black u-clearfix u-container-style u-dialog-block u-opacity u-opacity-55 u-valign-middle-lg u-valign-middle-xl u-dialog-section-5"
-      id="verifyPop" data-dialog-show-on="page_exit" data-dialog-show-interval="3000"
-      data-dialog-show-on-list="161976806">
-      <img class="u-image u-image-contain u-image-default u-image-1" src="images/verifyemailbgframe.png" alt=""
-        data-image-width="904" data-image-height="808">
-      <div
-        class="u-align-justify-xs u-align-left-lg u-align-left-md u-align-left-sm u-align-left-xl u-container-style u-dialog u-opacity u-opacity-5 u-shape-rectangle u-white u-dialog-1">
-        <div class="u-container-layout u-valign-top-lg u-valign-top-xl u-container-layout-1">
-          <a href="https://nicepage.com/one-page-template" class="u-border-none u-btn u-button-style u-none u-btn-1">
-            &nbsp;</a>
-          <h6 class="u-align-center-md u-align-center-sm u-align-center-xs u-text u-text-1">Account Not Verify
-          </h6>
-          <h6 class="u-align-center-md u-align-center-sm u-align-center-xs u-text u-text-2">Please check the
-            verification
-            email&nbsp;<br>in your inbox to verify your account
-          </h6>
+        <div class="u-form u-form-2">
+          <form action="#" method="POST" class="u-clearfix u-form-spacing-0 u-form-vertical u-inner-form" source="email"
+            name="form" style="padding: 0px;">
+            <div class="u-form-group u-form-name u-label-none">
+              <label for="name-de45" class="u-label"></label>
+              <input placeholder="Email Address" type="email" id="name-de45" name="email"
+                class="u-custom-font u-heading-font u-input u-input-rectangle u-radius-50 u-text-custom-color-2 u-white u-input-2"
+                required="">
+            </div>
+          </form>
         </div>
-      </div>
-      <img class="u-image u-image-contain u-image-default u-preserve-proportions u-image-2" src="images/closebutton.png"
-        alt="" data-image-width="100" data-image-height="100">
-      <img onclick="BackLoginPage()" class="u-image u-image-contain u-image-default u-preserve-proportions u-image-3"
-        src="images/closebutton.png" alt="" data-image-width="100" data-image-height="100">
-      <img class="u-image u-image-contain u-image-default u-preserve-proportions u-image-4" src="images/emailicon.png"
-        alt="" data-image-width="321" data-image-height="321">
-    </section>
-    <style>
-      .u-dialog-section-5 {
-        min-height: 1154px;
-      }
+        <div class="u-form u-form-3">
+          <form action="#" method="POST" class="u-clearfix u-form-spacing-0 u-form-vertical u-inner-form" source="email"
+            name="form-1" style="padding: 0px;">
+            <div class="u-form-checkbox u-form-group u-form-group-3">
+              <input style="height: 9px;" type="checkbox" id="checkbox-ad46" name="checkbox" value="On"
+                checked="checked">
+              <label for="checkbox-ad46" class="u-label u-label-3">Remember Me</label>
+            </div>
+          </form>
+          <div id="passError"
+            style="color: red; font-size: 12px; font-weight: 600; margin-left: -3px; height: 19px; margin-top: 12px;"
+            class="error-message-pass"></div>
+        </div>
+        <h5 class="u-text u-text-custom-color-4 u-text-default-xs u-text-2"></h5>
+        <a style="top: 8px;" onclick="Submit()" type="submit" value="submit" name="submit"
+          class="u-align-center-xs u-border-none u-btn u-button-style u-none u-btn-1"><span
+            class="u-file-icon u-icon u-icon-1"><img src="images/loginnowbutton.png"></span></a>
+        <!-- <img id="passImg" onclick="ShowPass();" class="u-image u-image-contain u-image-default u-image-3"
+        src="images/Element1.png" style="top:-3px;" alt="" data-image-width="71" data-image-height="41"> -->
+        <a href="./ForgotPassword.html" class="u-text u-text-custom-color-4 u-text-1" style="  color: #d48300;">Reset
+          Number?</a>
 
-      .u-dialog-section-5 .u-image-1 {
-        width: 539px;
-        height: 504px;
-        margin: 429px calc(((100% - 720px) / 2) + 85px) 0 auto;
-      }
+      </section>
 
-      .u-dialog-section-5 .u-dialog-1 {
-        width: 800px;
-        margin: -613px auto 0;
-      }
+      <section
+        class="u-black u-clearfix u-container-style u-dialog-block u-opacity u-opacity-55 u-valign-middle-lg u-valign-middle-xl u-dialog-section-4"
+        id="sec-b5d3" data-dialog-show-on="page_exit" data-dialog-show-interval="3000"
+        data-dialog-show-on-list="161976806">
+        <div
+          class="u-align-justify-xs u-align-left-lg u-align-left-md u-align-left-sm u-align-left-xl u-container-style u-dialog u-opacity u-opacity-5 u-shape-rectangle u-white u-dialog-1">
+          <div class="u-container-layout u-valign-top-lg u-valign-top-xl u-container-layout-1">
+            <img
+              class="u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-image u-image-contain u-image-default u-image-1"
+              src="images/verifyemailbgframe.png" alt="" data-image-width="904" data-image-height="808">
+            <img class="u-image u-image-contain u-image-default u-image-2" src="images/tickicom.png" alt=""
+              data-image-width="276" data-image-height="248">
+            <a style="width: 100px;" class="u-border-none u-btn u-button-style u-none u-btn-1"><span
+                class="u-file-icon u-icon u-icon-1"><img src="images/clicktoplaybutton.png" style="width: 149px;"
+                  onclick="OpenApp();" alt=""></span>&nbsp;
+            </a>
+            <h6 style="font-size: 18px;top: 9px;"
+              class="u-align-center-md u-align-center-sm u-align-center-xs u-text u-text-1">Login Suc​cessful</h6>
+            <h6 class="u-align-center-md u-align-center-sm u-align-center-xs u-text u-text-2"
+              style=" font-size: 16px;width: 280px;height: 19px;left: 28px;">Your account has been successfully logged
+              in
+            </h6>
+          </div>
+      </section>
 
-      .u-dialog-section-5 .u-container-layout-1 {
-        padding: 30px;
-      }
-
-      .u-dialog-section-5 .u-btn-1 {
-        border-style: none;
-        font-weight: 700;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        margin: 311px auto 0;
-        padding: 0;
-      }
-
-      .u-dialog-section-5 .u-text-1 {
-        width: auto;
-        font-weight: 700;
-        font-size: 1.125rem;
-        margin: -469px -231px 0 auto;
-      }
-
-      .u-dialog-section-5 .u-text-2 {
-        font-size: 1.875rem;
-        width: auto;
-        font-weight: 500;
-        margin: 7px -433px 0 809px;
-      }
-
-      .u-dialog-section-5 .u-icon-1 {
-        width: 20px;
-        height: 20px;
-      }
-
-      .u-dialog-section-5 .u-image-2 {
-        width: 45px;
-        height: 45px;
-        margin: -988px calc(((100% - 340px) / 2) + 55px) 60px auto;
-      }
-
-      .u-dialog-section-5 .u-image-3 {
-        width: 65px;
-        height: 65px;
-        margin: 362px calc(((100% - 720px) / 2) + 75px) 60px auto;
-      }
-
-      .u-dialog-section-5 .u-image-4 {
-        width: 212px;
-        height: 212px;
-        margin: 111px auto 0;
-      }
-
-      @media (max-width: 2000px) {
+      <section
+        class="u-black u-clearfix u-container-style u-dialog-block u-opacity u-opacity-55 u-valign-middle-lg u-valign-middle-xl u-dialog-section-5"
+        id="verifyPop" data-dialog-show-on="page_exit" data-dialog-show-interval="3000"
+        data-dialog-show-on-list="161976806">
+        <img class="u-image u-image-contain u-image-default u-image-1" src="images/verifyemailbgframe.png" alt=""
+          data-image-width="904" data-image-height="808">
+        <div
+          class="u-align-justify-xs u-align-left-lg u-align-left-md u-align-left-sm u-align-left-xl u-container-style u-dialog u-opacity u-opacity-5 u-shape-rectangle u-white u-dialog-1">
+          <div class="u-container-layout u-valign-top-lg u-valign-top-xl u-container-layout-1">
+            <a href="https://nicepage.com/one-page-template" class="u-border-none u-btn u-button-style u-none u-btn-1">
+              &nbsp;</a>
+            <h6 class="u-align-center-md u-align-center-sm u-align-center-xs u-text u-text-1">Account Not Verify
+            </h6>
+            <h6 class="u-align-center-md u-align-center-sm u-align-center-xs u-text u-text-2">Please check the
+              verification
+              email&nbsp;<br>in your inbox to verify your account
+            </h6>
+          </div>
+        </div>
+        <img class="u-image u-image-contain u-image-default u-preserve-proportions u-image-2"
+          src="images/closebutton.png" alt="" data-image-width="100" data-image-height="100">
+        <img onclick="BackLoginPage()" class="u-image u-image-contain u-image-default u-preserve-proportions u-image-3"
+          src="images/closebutton.png" alt="" data-image-width="100" data-image-height="100">
+        <img class="u-image u-image-contain u-image-default u-preserve-proportions u-image-4" src="images/emailicon.png"
+          alt="" data-image-width="321" data-image-height="321">
+      </section>
+      <style>
         .u-dialog-section-5 {
-          min-height: 1332px;
+          min-height: 1154px;
         }
 
         .u-dialog-section-5 .u-image-1 {
           width: 539px;
-          margin-top: 263px;
-          margin-right: auto;
+          height: 504px;
+          margin: 429px calc(((100% - 720px) / 2) + 85px) 0 auto;
         }
 
         .u-dialog-section-5 .u-dialog-1 {
-          width: 720px;
-          height: auto;
-          min-height: 835px;
-          margin-top: -643px;
+          width: 800px;
+          margin: -613px auto 0;
         }
 
         .u-dialog-section-5 .u-container-layout-1 {
+          padding: 30px;
+        }
+
+        .u-dialog-section-5 .u-btn-1 {
+          border-style: none;
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          margin: 311px auto 0;
           padding: 0;
         }
 
-        .u-dialog-section-5 .u-btn-1 {
-          margin-top: 717px;
-        }
-
-        .u-dialog-section-5 .u-text-1 {
-          font-size: 1.875rem;
-          width: 355px;
-          margin-top: -559px;
-          margin-right: auto;
-        }
-
-        .u-dialog-section-5 .u-text-2 {
-          font-size: 1.5rem;
-          width: 454px;
-          margin-top: 246px;
-          margin-left: auto;
-          margin-right: auto;
-        }
-
-        .u-dialog-section-5 .u-image-2 {
-          width: 62px;
-          height: 62px;
-          margin-top: -696px;
-          margin-right: calc(((100% - 720px) / 2) + 72px);
-          margin-bottom: 0;
-        }
-
-        .u-dialog-section-5 .u-image-3 {
-          width: 62px;
-          height: 62px;
-          margin-top: -62px;
-          margin-right: calc(((100% - 720px) / 2) + 72px);
-          margin-bottom: 0;
-        }
-
-        .u-dialog-section-5 .u-image-4 {
-          width: 212px;
-          height: 212px;
-          margin-top: 68px;
-          margin-bottom: 60px;
-        }
-      }
-
-      @media (max-width: 767px) {
-        .u-dialog-section-5 .u-image-1 {
-          width: 539px;
-          height: 505px;
-          margin-top: 199px;
-        }
-
-        .u-dialog-section-5 .u-dialog-1 {
-          width: 540px;
-          margin-top: -644px;
-        }
-
-        .u-dialog-section-5 .u-btn-1 {
-          margin-top: 207px;
-        }
-
-        .u-dialog-section-5 .u-text-1 {
-          width: 355px;
-          margin-top: -559px;
-          margin-right: -231px;
-        }
-
-        .u-dialog-section-5 .u-text-2 {
-          width: 454px;
-        }
-
-        .u-dialog-section-5 .u-image-2 {
-          width: 62px;
-          height: 62px;
-          margin-top: -988px;
-          margin-right: calc(((100% - 340px) / 2) + 55px);
-        }
-
-        .u-dialog-section-5 .u-image-3 {
-          width: 62px;
-          height: 62px;
-          margin-top: -62px;
-          margin-right: calc(((100% - 540px) / 2) + 72px);
-        }
-
-        .u-dialog-section-5 .u-image-4 {
-          width: 212px;
-          height: 212px;
-        }
-      }
-
-      @media (max-width: 575px) {
-        .u-dialog-section-5 .u-image-1 {
-          width: 291px;
-          height: 275px;
-          margin-top: 186px;
-        }
-
-        .u-dialog-section-5 .u-dialog-1 {
-          width: 338px;
-          margin-top: -447px;
-        }
-
-        .u-dialog-section-5 .u-btn-1 {
-          margin-top: 472px;
-        }
-
         .u-dialog-section-5 .u-text-1 {
           width: auto;
+          font-weight: 700;
           font-size: 1.125rem;
-          margin-top: -299px;
-          margin-left: -1px;
-          margin-right: -1px;
+          margin: -469px -231px 0 auto;
         }
 
         .u-dialog-section-5 .u-text-2 {
-          font-size: 0.875rem;
+          font-size: 1.875rem;
           width: auto;
-          margin-top: 132px;
-          margin-left: 31px;
-          margin-right: 31px;
+          font-weight: 500;
+          margin: 7px -433px 0 809px;
         }
 
         .u-dialog-section-5 .u-icon-1 {
-          left: auto;
-          top: 35px;
-          position: absolute;
-          right: 16px;
+          width: 20px;
+          height: 20px;
+        }
+
+        .u-dialog-section-5 .u-image-2 {
+          width: 45px;
+          height: 45px;
+          margin: -988px calc(((100% - 340px) / 2) + 55px) 60px auto;
         }
 
         .u-dialog-section-5 .u-image-3 {
-          width: 37px;
-          height: 37px;
-          margin-top: 262px;
-          margin-right: calc(((100% - 340px) / 2) + 17px);
+          width: 65px;
+          height: 65px;
+          margin: 362px calc(((100% - 720px) / 2) + 75px) 60px auto;
         }
 
         .u-dialog-section-5 .u-image-4 {
-          width: 119px;
-          height: 97px;
-          margin-top: 29px;
+          width: 212px;
+          height: 212px;
+          margin: 111px auto 0;
         }
-      }
-    </style>
+
+        @media (max-width: 2000px) {
+          .u-dialog-section-5 {
+            min-height: 1332px;
+          }
+
+          .u-dialog-section-5 .u-image-1 {
+            width: 539px;
+            margin-top: 263px;
+            margin-right: auto;
+          }
+
+          .u-dialog-section-5 .u-dialog-1 {
+            width: 720px;
+            height: auto;
+            min-height: 835px;
+            margin-top: -643px;
+          }
+
+          .u-dialog-section-5 .u-container-layout-1 {
+            padding: 0;
+          }
+
+          .u-dialog-section-5 .u-btn-1 {
+            margin-top: 717px;
+          }
+
+          .u-dialog-section-5 .u-text-1 {
+            font-size: 1.875rem;
+            width: 355px;
+            margin-top: -559px;
+            margin-right: auto;
+          }
+
+          .u-dialog-section-5 .u-text-2 {
+            font-size: 1.5rem;
+            width: 454px;
+            margin-top: 246px;
+            margin-left: auto;
+            margin-right: auto;
+          }
+
+          .u-dialog-section-5 .u-image-2 {
+            width: 62px;
+            height: 62px;
+            margin-top: -696px;
+            margin-right: calc(((100% - 720px) / 2) + 72px);
+            margin-bottom: 0;
+          }
+
+          .u-dialog-section-5 .u-image-3 {
+            width: 62px;
+            height: 62px;
+            margin-top: -62px;
+            margin-right: calc(((100% - 720px) / 2) + 72px);
+            margin-bottom: 0;
+          }
+
+          .u-dialog-section-5 .u-image-4 {
+            width: 212px;
+            height: 212px;
+            margin-top: 68px;
+            margin-bottom: 60px;
+          }
+        }
+
+        @media (max-width: 767px) {
+          .u-dialog-section-5 .u-image-1 {
+            width: 539px;
+            height: 505px;
+            margin-top: 199px;
+          }
+
+          .u-dialog-section-5 .u-dialog-1 {
+            width: 540px;
+            margin-top: -644px;
+          }
+
+          .u-dialog-section-5 .u-btn-1 {
+            margin-top: 207px;
+          }
+
+          .u-dialog-section-5 .u-text-1 {
+            width: 355px;
+            margin-top: -559px;
+            margin-right: -231px;
+          }
+
+          .u-dialog-section-5 .u-text-2 {
+            width: 454px;
+          }
+
+          .u-dialog-section-5 .u-image-2 {
+            width: 62px;
+            height: 62px;
+            margin-top: -988px;
+            margin-right: calc(((100% - 340px) / 2) + 55px);
+          }
+
+          .u-dialog-section-5 .u-image-3 {
+            width: 62px;
+            height: 62px;
+            margin-top: -62px;
+            margin-right: calc(((100% - 540px) / 2) + 72px);
+          }
+
+          .u-dialog-section-5 .u-image-4 {
+            width: 212px;
+            height: 212px;
+          }
+        }
+
+        @media (max-width: 575px) {
+          .u-dialog-section-5 .u-image-1 {
+            width: 291px;
+            height: 275px;
+            margin-top: 186px;
+          }
+
+          .u-dialog-section-5 .u-dialog-1 {
+            width: 338px;
+            margin-top: -447px;
+          }
+
+          .u-dialog-section-5 .u-btn-1 {
+            margin-top: 472px;
+          }
+
+          .u-dialog-section-5 .u-text-1 {
+            width: auto;
+            font-size: 1.125rem;
+            margin-top: -299px;
+            margin-left: -1px;
+            margin-right: -1px;
+          }
+
+          .u-dialog-section-5 .u-text-2 {
+            font-size: 0.875rem;
+            width: auto;
+            margin-top: 132px;
+            margin-left: 31px;
+            margin-right: 31px;
+          }
+
+          .u-dialog-section-5 .u-icon-1 {
+            left: auto;
+            top: 35px;
+            position: absolute;
+            right: 16px;
+          }
+
+          .u-dialog-section-5 .u-image-3 {
+            width: 37px;
+            height: 37px;
+            margin-top: 262px;
+            margin-right: calc(((100% - 340px) / 2) + 17px);
+          }
+
+          .u-dialog-section-5 .u-image-4 {
+            width: 119px;
+            height: 97px;
+            margin-top: 29px;
+          }
+        }
+      </style>
+    </div>
   </div>
   <script src="./deviceOrientationHandler.js"></script>
 </body>
 
 </html>
 <style>
+  input[type="checkbox"]:checked+label::after {
+    background: #d48300;
+    border: 3px #d48300;
+  }
+
   input[type=email]:focus {
-    border: 2px solid #fc6130;
+    border: 2px solid #d48300;
+  }
+
+  input[type=number]:focus {
+    border: 2px solid #d48300;
   }
 
   input[type=password]:focus {
-    border: 2px solid #fc6130;
+    border: 2px solid #d48300;
   }
 
   .u-btn-1:hover {

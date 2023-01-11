@@ -5,6 +5,16 @@ body {
   overscroll-behavior: none;
   overscroll-behavior-y: none;
 }
+.WrapBody {
+  background-image: url('./images/HomeBG.png');
+  background-attachment:scroll;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 110%;
+  width: 100%;
+  background-position: top;
+
+}
 .u-dialog-section-4 {
   min-height: 500px;
 }
@@ -69,7 +79,6 @@ body {
 .u-section-1 .u-image-1 {
   width: 324px;
   height: 289px;
-  margin: 85px auto 0;
 }
 
 .u-section-1 .u-image-2 {
@@ -198,8 +207,9 @@ body {
   }
 
   .u-section-1 .u-image-1 {
-    height: 649px;
-    margin-top: 146px;
+    height: 609px;
+    margin-top: -30%;
+    top: 583px;
     margin-right: initial;
     margin-left: initial;
     width: auto;
@@ -240,7 +250,7 @@ body {
   }
 
   .u-section-1 .u-text-1 {
-    top: -45px;
+    top: -370px;
     font-size: 0.75rem;
     width: auto;
     margin: -19px calc(((100% - 720px) / 2) + 180px) 0 calc(((100% - 720px) / 2) + 430px);
@@ -378,13 +388,13 @@ body {
 
    .u-section-1 {
     min-height: 783px;
-    margin-top: -50px;
   }
 
   .u-section-1 .u-image-1 {
-    height: 481px;
+    height: 484px;
     width: 343px;
-    margin-top: 157px;
+    margin-top: -30%;
+    top: 395px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -431,7 +441,7 @@ body {
   }
 
   .u-section-1 .u-text-1 {
-    top: -69px;
+    top: -298px;
     margin-right: calc(((100% - 340px) / 2) + 23px);
     margin-left: calc(((100% - 340px) / 2) + 210px);
   }
