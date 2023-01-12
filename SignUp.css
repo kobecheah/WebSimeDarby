@@ -665,6 +665,7 @@ body {
     height: 40px;
     font-weight: 600;
     margin-top: -11px;
+    min-width: 20%;
   }
 
   .u-section-1 .u-form-4 {
