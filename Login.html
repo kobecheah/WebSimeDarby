@@ -415,11 +415,11 @@
 
   async function Submit() {
     var email = document.querySelector('input[name=email]').value;
-    var password = document.querySelector('input[name=password]').value;
+    var contact = document.querySelector('input[name=contact]').value;
 
     var myBody = {
       "email": email,
-      "password": password,
+      "contact": contact,
     };
     fetch(apiDomain + 'api/login',
       {
@@ -433,13 +433,13 @@
       .then(jsondata => {
         var status = jsondata.status;
         if (status === false) {
-          if (jsondata.errors.password) {
+          if (jsondata.errors.contact) {
             document.getElementById('passError').style.backgroundColor = '#ffe6e6';
-            document.getElementById('passError').innerHTML = "Invalid email or password";
+            document.getElementById('passError').innerHTML = "Invalid email or contact";
           }
           else if (jsondata.errors.email) {
             document.getElementById('passError').style.backgroundColor = '#ffe6e6';
-            document.getElementById('passError').innerHTML = "Invalid email or password";
+            document.getElementById('passError').innerHTML = "Invalid email or contact";
           }
 
           else if (JSON.stringify(jsondata.errors.error).includes("verification")) {
@@ -449,7 +449,7 @@
           }
           else if (jsondata.errors.errors) {
             document.getElementById('passError').style.backgroundColor = '#ffe6e6';
-            document.getElementById('passError').innerHTML = "Invalid email or password";
+            document.getElementById('passError').innerHTML = "Invalid email or contact";
           }
           //  alert(JSON.stringify(jsondata.errors.error));
         }
@@ -473,17 +473,17 @@
     }
 
   };
-  function ShowPass() {
-    var s = document.getElementById("passwordBtn");
-    if (document.getElementById("passImg").getAttribute("src") === "images/Element1.png") {
-      document.getElementById("passImg").src = "images/Unviewpassword.png";
-    }
-    else {
-      document.getElementById("passImg").src = "images/Element1.png"
-    }
-    s.type = s.type == "password" ? "text" : "password";
+  // function ShowPass() {
+  //   var s = document.getElementById("passwordBtn");
+  //   if (document.getElementById("passImg").getAttribute("src") === "images/Element1.png") {
+  //     document.getElementById("passImg").src = "images/Unviewpassword.png";
+  //   }
+  //   else {
+  //     document.getElementById("passImg").src = "images/Element1.png"
+  //   }
+  //   s.type = s.type == "password" ? "text" : "password";
 
-  }
+  // }
   function setCookie(tokenValue) {
 
   }
