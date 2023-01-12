@@ -665,7 +665,10 @@ body {
     height: 40px;
     font-weight: 600;
     margin-top: -11px;
-    min-width: 20%;
+    min-width:100%; 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    
   }
 
   .u-section-1 .u-form-4 {
