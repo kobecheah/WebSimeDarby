@@ -668,7 +668,8 @@ body {
     min-width:100%; 
     -webkit-appearance: none;
     -moz-appearance: none;
-    
+    display: block;
+    text-align: right;
   }
 
   .u-section-1 .u-form-4 {
