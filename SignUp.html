@@ -52,12 +52,11 @@
                 <label for="name-e9a0" class="u-label"></label>
                 <input type="text" id="date-e9a0" name="dateofbirth"
                   class="u-border-1 u-border-grey-30 u-custom-font u-heading-font u-input u-input-rectangle u-radius-50 u-text-black u-white u-input-3"
-                  required="required" max="31-12-2030"  style="text-align: left;" placeholder="Date of Birth" onmouseover="((this.type='date'))"
-                  onfocus="((this.type='date'))" onclick="(this.type='date')" onmouseenter="(this.type='date')" onmousedown="(this.type='date')"
-                  onkeydown="(this.type='date')" onkeypress="(this.type='date')" onforminput="(this.type='date')"
-                  onblur="(this.type='text')"> 
-                <div id="dobError"
-                  style="color: red; font-size: 10px; margin-left: 10px; height: 14px; min-width: 10%;"
+                  required="required" max="31-12-2030" style="text-align: left;" placeholder="Date of Birth"
+                  onmouseover="((this.type='date'))" onfocus="((this.type='date'))" onclick="(this.type='date')"
+                  onmouseenter="(this.type='date')" onmousedown="(this.type='date')" onkeydown="(this.type='date')"
+                  onkeypress="(this.type='date')" onforminput="(this.type='date')" onblur="(this.type='text')">
+                <div id="dobError" style="color: red; font-size: 10px; margin-left: 10px; height: 14px; min-width: 10%;"
                   class="error-message-email"></div>
               </div>
             </form>
@@ -544,21 +543,24 @@
 
   input[type="date"] {
     display: block;
-    text-align:left;
+    text-align: left;
   }
+
   input[type=date]:focus {
-   text-align:left;
+    text-align: left;
   }
+
   input[type=date]::before {
-   text-align:left;
+    text-align: left;
   }
+
   input[type=date]:focus-within {
-   text-align:left;
+    text-align: left;
   }
 
   input[type=text]:focus {
     border: 2px solid #d48300;
-    text-align:left;
+    text-align: left;
   }
 
   input[type=checkbox]:checked:before {
@@ -630,7 +632,7 @@
     var address2 = document.querySelector('input[name=homeaddress2]').value;
     var postal_code = document.querySelector('input[name=postcode]').value;
     var city = document.querySelector('input[name=city]').value;
-    var state =  document.getElementById("select-c");
+    var state = document.getElementById("select-c");
     var myBody = {
       "name": name,
       "dob": dob,
@@ -680,8 +682,8 @@
     var address2 = document.querySelector('input[name=homeaddress2]').value;
     var postal_code = document.querySelector('input[name=postcode]').value;
     var city = document.querySelector('input[name=city]').value;
-    var state =  document.getElementById("select-c");
-   
+    var state = document.getElementById("select-c");
+
     var myBody = {
       "name": name,
       "dob": dob,
@@ -768,7 +770,24 @@
           // alert(JSON.stringify(jsondata.errors.error));
         }
         else {
-          SubmitSurvey();
+          if (document.getElementById('checkbox-fa2a').checked) {
+            SubmitSurvey();
+          }
+          else {
+            document.getElementById('nameError').innerHTML = "";
+            document.getElementById('dobError').innerHTML = "";
+            document.getElementById('genderError').innerHTML = "";
+            document.getElementById('income_rangeError').innerHTML = "";
+            document.getElementById('mobile_noError').innerHTML = "";
+            document.getElementById('emailError').innerHTML = "";
+            document.getElementById('address1Error').innerHTML = "";
+            document.getElementById('address2Error').innerHTML = "";
+            document.getElementById('postal_codeError').innerHTML = "";
+            document.getElementById('cityError').innerHTML = "";
+            document.getElementById('stateError').innerHTML = "";
+            document.getElementById('agreeError').innerHTML = "Please check terms and conditions.";
+          }
+
 
         }
       })
