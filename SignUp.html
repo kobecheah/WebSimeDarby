@@ -643,6 +643,7 @@
       "postal_code": postal_code,
       "city": city,
       "state": state.options[state.selectedIndex].text == "State" ? "" : state.options[state.selectedIndex].text,
+      "checking": false,
       "url": (appUrl + "EmailVerified.html" + (params == null ? "" : params)),
       "expired_url": (appUrl + "Home.html")
     };
@@ -658,8 +659,7 @@
       .then(jsondata => {
         var status = jsondata.status;
         if (status === false) {
-          var x = document.getElementById("sec-b5d3");
-          x.style.display = "block";   
+          OpenVerify();
         }
         else {
           OpenVerify();
@@ -693,6 +693,7 @@
       "address2": address2,
       "postal_code": postal_code,
       "city": city,
+      "checking": true,
       "state": state.options[state.selectedIndex].text == "State" ? "" : state.options[state.selectedIndex].text,
       "url": (appUrl + "EmailVerified.html" + (params == null ? "" : params)),
       "expired_url": (appUrl + "Home.html")
