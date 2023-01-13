@@ -52,8 +52,12 @@
                 <label for="name-e9a0" class="u-label"></label>
                 <input type="text" id="date-e9a0" name="dateofbirth"
                   class="u-border-1 u-border-grey-30 u-custom-font u-heading-font u-input u-input-rectangle u-radius-50 u-text-black u-white u-input-3"
-                  required="required" max="31-12-2030" placeholder="Date of Birth" onmouseover="((this.type='date'))" onfocus="((this.type='date'))" onmouseenter="(this.type='date')" onmousedown="(this.type='date')" onkeydown="(this.type='date')" onkeypress="(this.type='date')" onforminput="(this.type='date')" onblur="(this.type='text')">
-                <div id="emailError" style="color: red; font-size: 10px; margin-left: 10px; height: 14px; min-width: 10%;"
+                  required="required" max="31-12-2030" onchange="mydate();" placeholder="Date of Birth" onmouseover="((this.type='date'))"
+                  onfocus="((this.type='date'))" onmouseenter="(this.type='date')" onmousedown="(this.type='date')"
+                  onkeydown="(this.type='date')" onkeypress="(this.type='date')" onforminput="(this.type='date')"
+                  onblur="(this.type='text')">
+                <div id="emailError"
+                  style="color: red; font-size: 10px; margin-left: 10px; height: 14px; min-width: 10%;"
                   class="error-message-email"></div>
               </div>
             </form>
@@ -621,11 +625,12 @@
       margin-top: 42px;
     }
   }
-input[type="date"]
-{
-    display:block;
 
-}
+  input[type="date"] {
+    display: block;
+
+  }
+
   input[type=text]:focus {
     border: 2px solid #d48300;
   }
@@ -844,6 +849,16 @@ input[type="date"]
     }
     s.type = s.type == "password" ? "text" : "password";
 
+  }
+  function mydate() {
+    d = new Date(document.getElementById("dt").value);
+    dt = d.getDate();
+    mn = d.getMonth();
+    mn++;
+    yy = d.getFullYear();
+    document.getElementById("ndt").value = dt + "/" + mn + "/" + yy
+    document.getElementById("ndt").hidden = false;
+    document.getElementById("dt").hidden = true;
   }
   function changeImage(id) {
     var image = document.getElementById(id).getAttribute("src");
