@@ -433,7 +433,7 @@
       .then(jsondata => {
         var status = jsondata.status;
         if (status === false) {
-          if (jsondata.errors.contact) {
+          if (jsondata.errors.password) {
             document.getElementById('passError').style.backgroundColor = '#ffe6e6';
             document.getElementById('passError').innerHTML = "Invalid email or contact";
           }
