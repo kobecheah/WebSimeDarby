@@ -56,7 +56,7 @@
                   onfocus="((this.type='date'))" onclick="(this.type='date')" onmouseenter="(this.type='date')" onmousedown="(this.type='date')"
                   onkeydown="(this.type='date')" onkeypress="(this.type='date')" onforminput="(this.type='date')"
                   onblur="(this.type='text')"> 
-                <div id="emailError"
+                <div id="dobError"
                   style="color: red; font-size: 10px; margin-left: 10px; height: 14px; min-width: 10%;"
                   class="error-message-email"></div>
               </div>
@@ -66,9 +66,9 @@
             <form class="u-clearfix u-form-spacing-0 u-form-vertical u-inner-form" source="email" name="form-1"
               style="padding: 0px;">
               <div class="u-form-group u-form-select u-label-none u-form-group-2">
-                <label for="select-b3ac" class="u-label">Dropdown</label>
+                <label for="select-a" class="u-label">Dropdown</label>
                 <div class="u-form-select-wrapper">
-                  <select id="select-b3ac" name="gender"
+                  <select id="select-a" name="gender"
                     class="u-border-1 u-border-grey-30 u-custom-font u-heading-font u-input u-input-rectangle u-radius-50 u-white u-input-2"
                     required="required" placeholder="Gender">
                     <option value="" disabled selected hidden>Gender</option>
@@ -81,7 +81,7 @@
                     viewBox="0 0 16 16" style="fill:currentColor;color:#d48300;top: 40%;" xml:space="preserve">
                     <polygon class="st0" points="8,12 2,4 14,4 "></polygon>
                   </svg>
-                  <div id="ageError" style="color: red; font-size: 10px; margin-left: 10px; height: 14px;"
+                  <div id="genderError" style="color: red; font-size: 10px; margin-left: 10px; height: 14px;"
                     class="error-message-age"></div>
                 </div>
               </div>
@@ -91,9 +91,9 @@
             <form class="u-clearfix u-form-spacing-0 u-form-vertical u-inner-form" source="email" name="form-1"
               style="padding: 0px;">
               <div class="u-form-group u-form-select u-label-none u-form-group-2">
-                <label for="select-b3ac" class="u-label">Dropdown</label>
+                <label for="select-b" class="u-label">Dropdown</label>
                 <div class="u-form-select-wrapper">
-                  <select id="select-b3ac" name="income"
+                  <select id="select-b" name="income"
                     class="u-border-1 u-border-grey-30 u-custom-font u-heading-font u-input u-input-rectangle u-radius-50 u-white u-input-2"
                     required="required" placeholder="Income Range">
                     <option value="" disabled selected hidden>Income Range</option>
@@ -109,7 +109,7 @@
                     viewBox="0 0 16 16" style="fill:currentColor;color:#d48300;top: 40%;" xml:space="preserve">
                     <polygon class="st0" points="8,12 2,4 14,4 "></polygon>
                   </svg>
-                  <div id="ageError" style="color: red; font-size: 10px; margin-left: 10px; height: 14px;"
+                  <div id="income_rangeError" style="color: red; font-size: 10px; margin-left: 10px; height: 14px;"
                     class="error-message-age"></div>
                 </div>
               </div>
@@ -123,7 +123,7 @@
                 <input type="number" id="contact-e9a0" name="contact"
                   class="u-border-1 u-border-grey-30 u-custom-font u-heading-font u-input u-input-rectangle u-radius-50 u-text-black u-white u-input-3"
                   required="required" placeholder="Contact No">
-                <div id="emailError" style="color: red; font-size: 10px; margin-left: 10px; height: 14px;"
+                <div id="mobile_noError" style="color: red; font-size: 10px; margin-left: 10px; height: 14px;"
                   class="error-message-email"></div>
               </div>
             </form>
@@ -149,7 +149,7 @@
                 <input type="text" id="name-e9a0" name="homeaddress1"
                   class="u-border-1 u-border-grey-30 u-custom-font u-heading-font u-input u-input-rectangle u-radius-50 u-text-black u-white u-input-3"
                   required="required" placeholder="Home Address Line 1">
-                <div id="emailError" style="color: red; font-size: 10px; margin-left: 10px; height: 14px;"
+                <div id="address1Error" style="color: red; font-size: 10px; margin-left: 10px; height: 14px;"
                   class="error-message-email"></div>
               </div>
             </form>
@@ -162,7 +162,7 @@
                 <input type="text" id="name-e9a0" name="homeaddress2"
                   class="u-border-1 u-border-grey-30 u-custom-font u-heading-font u-input u-input-rectangle u-radius-50 u-text-black u-white u-input-3"
                   required="none" placeholder="Home Address Line 2">
-                <div id="emailError" style="color: red; font-size: 10px; margin-left: 10px; height: 14px;"
+                <div id="address2Error" style="color: red; font-size: 10px; margin-left: 10px; height: 14px;"
                   class="error-message-email"></div>
               </div>
             </form>
@@ -175,7 +175,7 @@
                 <input type="text" id="name-e9a0" name="postcode"
                   class="u-border-1 u-border-grey-30 u-custom-font u-heading-font u-input u-input-rectangle u-radius-50 u-text-black u-white u-input-3"
                   required="none" placeholder="Post Code">
-                <div id="emailError" style="color: red; font-size: 10px; margin-left: 10px; height: 14px;"
+                <div id="postal_codeError" style="color: red; font-size: 10px; margin-left: 10px; height: 14px;"
                   class="error-message-email"></div>
               </div>
             </form>
@@ -187,7 +187,7 @@
                   <input type="text" id="name-e9a0" name="city"
                     class="u-border-1 u-border-grey-30 u-custom-font u-heading-font u-input u-input-rectangle u-radius-50 u-text-black u-white u-input-3"
                     required="none" placeholder="City">
-                  <div id="emailError" style="color: red; font-size: 10px; margin-left: 10px; height: 14px;"
+                  <div id="cityError" style="color: red; font-size: 10px; margin-left: 10px; height: 14px;"
                     class="error-message-email"></div>
                 </div>
               </form>
@@ -196,9 +196,9 @@
               <form class="u-clearfix u-form-spacing-0 u-form-vertical u-inner-form" source="email" name="form-1"
                 style="padding: 0px;">
                 <div class="u-form-group u-form-select u-label-none u-form-group-2">
-                  <label for="select-b3ac" class="u-label">Dropdown</label>
+                  <label for="select-c" class="u-label">Dropdown</label>
                   <div class="u-form-select-wrapper">
-                    <select id="select-b3ac" name="state"
+                    <select id="select-c" name="state"
                       class="u-border-1 u-border-grey-30 u-custom-font u-heading-font u-input u-input-rectangle u-radius-50 u-white u-input-2"
                       required="required" placeholder="State">
                       <option value="" disabled selected hidden>State</option>
@@ -224,7 +224,7 @@
                       viewBox="0 0 16 16" style="fill:currentColor;color:#d48300;top: 40%;" xml:space="preserve">
                       <polygon class="st0" points="8,12 2,4 14,4 "></polygon>
                     </svg>
-                    <div id="ageError" style="color: red; font-size: 10px; margin-left: 10px; height: 14px;"
+                    <div id="stateError" style="color: red; font-size: 10px; margin-left: 10px; height: 14px;"
                       class="error-message-age"></div>
                   </div>
                 </div>
@@ -248,7 +248,7 @@
               style="color: red; font-size: 10px; height: 14px; margin-bottom: -16px; left: 0; text-align: center;"
               class="error-message-agreeError"></div>
             <a id="playNow" class="u-border-none u-btn u-button-style u-none u-btn-1"><span
-                class="u-file-icon u-icon u-icon-1"><img onclick="return OpenVerify();" src="images/Button_Play now.png"
+                class="u-file-icon u-icon u-icon-1"><img onclick="return Checking();" src="images/Button_Play now.png"
                   alt=""></span>
             </a>
             <!-- <img id="passImg" onclick="ShowPass();"
@@ -259,90 +259,6 @@
           alt="" data-image-width="71" data-image-height="41"> -->
           </div>
       </section>
-
-      <section class="u-black u-clearfix u-container-style u-dialog-block u-opacity u-opacity-55 u-dialog-section-4"
-        id="sec-b5d3" data-dialog-show-on="page_exit" data-dialog-show-interval="3000"
-        data-dialog-show-on-list="161976806">
-        <div
-          class="u-align-justify-xs u-align-left-lg u-align-left-md u-align-left-sm u-align-left-xl u-container-style u-dialog u-opacity u-opacity-5 u-shape-rectangle u-white u-dialog-1">
-          <div class="u-valign-top-lg u-valign-top-xl u-container-layout-1">
-            <img class="u-image u-image-contain u-image-default u-image-1" src="images/Quicksurveybgframe.png" alt=""
-              data-image-width="824" data-image-height="1392">
-            <img class="u-image u-image-default u-image-3" src="images/BeforeWeStart.png" alt="" data-image-width="498"
-              data-image-height="187">
-            <h6 class="u-align-center-md u-align-center-sm u-align-center-xs u-text u-text-1"
-              style="margin-bottom: 19px">
-              Which of the following
-              cashless
-              payment methods do you use? (Choose all that apply)</h6>
-            <div class="answer-container" onclick="changeImage('survey1')">
-              <img src="images/AnswerColumn.png" class="answer-img" id="survey1" alt="" data-image-width="664"
-                data-image-height="147">
-              <h6 class="centered">
-                Debit Card</h6>
-            </div>
-            <div class="answer-container" onclick="changeImage('survey2')"><img src="images/AnswerColumn.png"
-                class="answer-img" id="survey2" alt="" data-image-width="664" data-image-height="147">
-              <h6 class="centered">
-                Credit Card</h6>
-            </div>
-            <div class="answer-container" onclick="changeImage('survey3')"><img src="images/AnswerColumn.png"
-                class="answer-img" id="survey3" alt="" data-image-width="664" data-image-height="147">
-              <h6 class="centered">
-                eWallet</h6>
-            </div>
-            <div class="answer-container" onclick="changeImage('survey4')"><img src="images/AnswerColumn.png"
-                class="answer-img" id="survey4" alt="" data-image-width="664" data-image-height="147">
-              <h6 class="centered">
-                Bank QR</h6>
-            </div>
-            <div class="answer-container" onclick="changeImage('survey5')"><img src="images/AnswerColumn.png"
-                class="answer-img" id="survey5" alt="" data-image-width="664" data-image-height="147">
-              <h6 class="centered">
-                None of the above</h6>
-            </div>
-            <style>
-              .answer-container {
-                position: relative;
-                text-align: center;
-                color: white;
-                width: 210px;
-                height: 46px;
-                margin: auto;
-                margin-top: 10px;
-                margin-bottom: 10px;
-
-              }
-
-              .answer-img {
-                width: 100%;
-              }
-
-              .answer-container .centered {
-                position: absolute;
-                top: 47%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                margin: auto;
-                width: 100%;
-                color: black;
-                font-size: 15px;
-                font-size: 12px;
-                font-weight: bold;
-              }
-            </style>
-          </div>
-        </div>
-
-
-        <div id="surveyError" style="color: red; font-size: 10px; height: 14px; bottom: 218px;"
-          class="error-message-survey">
-        </div>
-        <img id="Submitbutton" class="u-image u-image-default u-image-8" src="images/Submitbutton.png"
-          onclick="SubmitSurvey()" alt="" data-image-width="394" data-image-height="122">
-      </section>
-
-
       <section class="u-black u-clearfix u-container-style u-dialog-block u-opacity u-opacity-55 u-dialog-section-5"
         id="verifyPop" data-dialog-show-on="page_exit" data-dialog-show-interval="3000"
         data-dialog-show-on-list="161976806">
@@ -705,32 +621,28 @@
   async function SubmitSurvey() {
     const params = sessionStorage.getItem('params');
     var name = document.querySelector('input[name=name]').value;
+    var dob = document.querySelector('input[name=dateofbirth]').value;
+    var gender = document.getElementById("select-a");
+    var income_range = document.getElementById("select-b");
+    var mobile_no = document.querySelector('input[name=contact]').value;
     var email = document.querySelector('input[name=email]').value;
-    var agegroup = document.getElementById("select-b3ac");
-    var password = document.querySelector('input[name=password]').value;
-    var confirm = document.querySelector('input[name=confirmPass]').value;
-    // var survey = document.querySelector('input[name="surveyquestion"]:checked').value;
-    var resultQuestion = "AnswerSelected";
-    var SurveyNew = "";
-    var survey1Q = document.getElementById("survey1").src.toString().includes(resultQuestion) ? "Debit Card," : "";
-    var survey2Q = document.getElementById("survey2").src.toString().includes(resultQuestion) ? "Credit Card," : "";
-    var survey3Q = document.getElementById("survey3").src.toString().includes(resultQuestion) ? "eWallet," : "";
-    var survey4Q = document.getElementById("survey4").src.toString().includes(resultQuestion) ? "Bank QR," : "";
-    var survey5Q = document.getElementById("survey5").src.toString().includes(resultQuestion) ? "None of the above" : "";
-    if (survey1Q != "") { SurveyNew = SurveyNew + survey1Q }
-    if (survey2Q != "") { SurveyNew = SurveyNew + survey2Q }
-    if (survey3Q != "") { SurveyNew = SurveyNew + survey3Q }
-    if (survey4Q != "") { SurveyNew = SurveyNew + survey4Q }
-    if (survey5Q != "") { SurveyNew = SurveyNew + survey5Q }
-
+    var address1 = document.querySelector('input[name=homeaddress1]').value;
+    var address2 = document.querySelector('input[name=homeaddress2]').value;
+    var postal_code = document.querySelector('input[name=postcode]').value;
+    var city = document.querySelector('input[name=city]').value;
+    var state =  document.getElementById("select-c");
     var myBody = {
       "name": name,
+      "dob": dob,
+      "gender": gender.options[gender.selectedIndex].text == "Gender" ? "" : gender.options[gender.selectedIndex].text,
+      "income_range": income_range.options[income_range.selectedIndex].text == "Income Range" ? "" : income_range.options[income_range.selectedIndex].text,
+      "mobile_no": mobile_no,
       "email": email,
-      "age_group": agegroup.options[agegroup.selectedIndex].text == "Age" ? "" : agegroup.options[agegroup.selectedIndex].text,
-      "password": password,
-      "password_confirmation": confirm,
-      "payment_method": SurveyNew,
-      "checking": false,
+      "address1": address1,
+      "address2": address2,
+      "postal_code": postal_code,
+      "city": city,
+      "state": state.options[state.selectedIndex].text == "State" ? "" : state.options[state.selectedIndex].text,
       "url": (appUrl + "EmailVerified.html" + (params == null ? "" : params)),
       "expired_url": (appUrl + "Home.html")
     };
@@ -747,12 +659,7 @@
         var status = jsondata.status;
         if (status === false) {
           var x = document.getElementById("sec-b5d3");
-          x.style.display = "block";
-
-          if (jsondata.errors.payment_method) {
-
-            document.getElementById('surveyError').innerHTML = JSON.stringify(jsondata.errors.payment_method).replaceAll('"', "");
-          }
+          x.style.display = "block";   
         }
         else {
           OpenVerify();
@@ -764,33 +671,29 @@
   async function Checking() {
     const params = sessionStorage.getItem('params');
     var name = document.querySelector('input[name=name]').value;
+    var dob = document.querySelector('input[name=dateofbirth]').value;
+    var gender = document.getElementById("select-a");
+    var income_range = document.getElementById("select-b");
+    var mobile_no = document.querySelector('input[name=contact]').value;
     var email = document.querySelector('input[name=email]').value;
-    var agegroup = document.getElementById("select-b3ac");
-    var password = document.querySelector('input[name=password]').value;
-    var confirm = document.querySelector('input[name=confirmPass]').value;
-    // var survey = document.querySelector('input[name="surveyquestion"]:checked').value;
-    var resultQuestion = "AnswerSelected";
-    var SurveyNew = "";
-    var survey1Q = document.getElementById("survey1").src.toString().includes(resultQuestion) ? "Debit Card," : "";
-    var survey2Q = document.getElementById("survey2").src.toString().includes(resultQuestion) ? "Credit Card," : "";
-    var survey3Q = document.getElementById("survey3").src.toString().includes(resultQuestion) ? "eWallet," : "";
-    var survey4Q = document.getElementById("survey4").src.toString().includes(resultQuestion) ? "Bank QR," : "";
-    var survey5Q = document.getElementById("survey5").src.toString().includes(resultQuestion) ? "None of the above" : "";
-    if (survey1Q != "") { SurveyNew = SurveyNew + survey1Q }
-    if (survey2Q != "") { SurveyNew = SurveyNew + survey2Q }
-    if (survey3Q != "") { SurveyNew = SurveyNew + survey3Q }
-    if (survey4Q != "") { SurveyNew = SurveyNew + survey4Q }
-    if (survey5Q != "") { SurveyNew = SurveyNew + survey5Q }
-
-
+    var address1 = document.querySelector('input[name=homeaddress1]').value;
+    var address2 = document.querySelector('input[name=homeaddress2]').value;
+    var postal_code = document.querySelector('input[name=postcode]').value;
+    var city = document.querySelector('input[name=city]').value;
+    var state =  document.getElementById("select-c");
+   
     var myBody = {
       "name": name,
+      "dob": dob,
+      "gender": gender.options[gender.selectedIndex].text == "Gender" ? "" : gender.options[gender.selectedIndex].text,
+      "income_range": income_range.options[income_range.selectedIndex].text == "Income Range" ? "" : income_range.options[income_range.selectedIndex].text,
+      "mobile_no": mobile_no,
       "email": email,
-      "age_group": agegroup.options[agegroup.selectedIndex].text == "Age" ? "" : agegroup.options[agegroup.selectedIndex].text,
-      "password": password,
-      "password_confirmation": confirm,
-      "payment_method": SurveyNew,
-      "checking": true,
+      "address1": address1,
+      "address2": address2,
+      "postal_code": postal_code,
+      "city": city,
+      "state": state.options[state.selectedIndex].text == "State" ? "" : state.options[state.selectedIndex].text,
       "url": (appUrl + "EmailVerified.html" + (params == null ? "" : params)),
       "expired_url": (appUrl + "Home.html")
     };
@@ -806,67 +709,68 @@
       .then(jsondata => {
         var status = jsondata.status;
         if (status === false) {
-          var x = document.getElementById("sec-b5d3");
-          x.style.display = "none";
+
           if (jsondata.errors.name) {
             document.getElementById('nameError').innerHTML = JSON.stringify(jsondata.errors.name).replaceAll('"', "");
           }
           else { document.getElementById('nameError').innerHTML = "" }
+
+          if (jsondata.errors.dob) {
+            document.getElementById('dobError').innerHTML = JSON.stringify(jsondata.errors.dob).replaceAll('"', "");
+          }
+          else { document.getElementById('dobError').innerHTML = "" }
+
+          if (jsondata.errors.gender) {
+            document.getElementById('genderError').innerHTML = JSON.stringify(jsondata.errors.gender).replaceAll('"', "");
+          }
+          else { document.getElementById('genderError').innerHTML = "" }
+
+          if (jsondata.errors.income_range) {
+            document.getElementById('income_rangeError').innerHTML = JSON.stringify(jsondata.errors.income_range).replaceAll('"', "");
+          }
+          else { document.getElementById('income_rangeError').innerHTML = "" }
+
+          if (jsondata.errors.mobile_no) {
+            document.getElementById('mobile_noError').innerHTML = JSON.stringify(jsondata.errors.mobile_no).replaceAll('"', "");
+          }
+          else { document.getElementById('mobile_noError').innerHTML = "" }
 
           if (jsondata.errors.email) {
             document.getElementById('emailError').innerHTML = JSON.stringify(jsondata.errors.email).replaceAll('"', "");
           }
           else { document.getElementById('emailError').innerHTML = "" }
 
-          if (jsondata.errors.age_group) {
-            document.getElementById('ageError').innerHTML = JSON.stringify(jsondata.errors.age_group).replaceAll('"', "");
+          if (jsondata.errors.address1) {
+            document.getElementById('address1Error').innerHTML = JSON.stringify(jsondata.errors.address1).replaceAll('"', "");
           }
-          else { document.getElementById('ageError').innerHTML = "" }
+          else { document.getElementById('address1Error').innerHTML = "" }
 
-          if (jsondata.errors.password) {
-            document.getElementById('cnpassError').innerHTML = JSON.stringify(jsondata.errors.password).replaceAll('"', "");
+          if (jsondata.errors.address2) {
+            document.getElementById('address2Error').innerHTML = JSON.stringify(jsondata.errors.address2).replaceAll('"', "");
           }
-          else { document.getElementById('cnpassError').innerHTML = "" }
+          else { document.getElementById('address2Error').innerHTML = "" }
+
+          if (jsondata.errors.postal_code) {
+            document.getElementById('postal_codeError').innerHTML = JSON.stringify(jsondata.errors.postal_code).replaceAll('"', "");
+          }
+          else { document.getElementById('postal_codeError').innerHTML = "" }
+
+          if (jsondata.errors.city) {
+            document.getElementById('cityError').innerHTML = JSON.stringify(jsondata.errors.city).replaceAll('"', "");
+          }
+          else { document.getElementById('cityError').innerHTML = "" }
+
+          if (jsondata.errors.state) {
+            document.getElementById('stateError').innerHTML = JSON.stringify(jsondata.errors.state).replaceAll('"', "");
+          }
+          else { document.getElementById('stateError').innerHTML = "" }
           // alert(JSON.stringify(jsondata.errors.error));
         }
         else {
-          // OpenSurvey();
+          SubmitSurvey();
 
         }
       })
   }
 
-
-  function ShowPass() {
-    var s = document.getElementById("password");
-
-    if (document.getElementById("passImg").getAttribute("src") === "images/Element1.png") {
-      document.getElementById("passImg").src = "images/Unviewpassword.png";
-    }
-    else {
-      document.getElementById("passImg").src = "images/Element1.png"
-    }
-    s.type = s.type == "password" ? "text" : "password";
-
-  }
-  function ShowConfirmPass() {
-    var s = document.getElementById("confirmPass");
-    if (document.getElementById("cnpassImg").getAttribute("src") === "images/Element1.png") {
-      document.getElementById("cnpassImg").src = "images/Unviewpassword.png";
-    }
-    else {
-      document.getElementById("cnpassImg").src = "images/Element1.png"
-    }
-    s.type = s.type == "password" ? "text" : "password";
-
-  }
- 
-  function changeImage(id) {
-    var image = document.getElementById(id).getAttribute("src");
-    if (document.getElementById(id).getAttribute("src") === "images/AnswerColumn.png") {
-      document.getElementById(id).src = "images/AnswerSelected.png";
-    } else {
-      document.getElementById(id).src = "images/AnswerColumn.png";
-    }
-  }
 </script>

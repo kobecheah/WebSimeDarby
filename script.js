@@ -1,4 +1,4 @@
-const apiDomain = "https://api-sekingo.visitsekinchan.com/";
+const apiDomain = "https://api-sbth.thebluelobby.com/";
 const appUrl = "https://kobecheah.github.io/web/";
 let coordinate = null;
 
