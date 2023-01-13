@@ -1,6 +1,10 @@
 body {
   height: 100%;
-
+  height: 100%;
+  overflow-y: hidden;
+  overflow: hidden;
+  overscroll-behavior: none;
+  overscroll-behavior-y: none;
 }
 .WrapBody {
   background-image: url('./images/Background_After home page.png');
