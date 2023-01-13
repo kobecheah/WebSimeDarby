@@ -69,7 +69,8 @@ body {
   margin: 11px auto 0;
 }
 
-.u-section-1 .u-input-3 {
+.u-section-1 .u-
+{
   background-image: none;
   font-size: 1rem;
 }
@@ -310,6 +311,10 @@ body {
 
   .u-section-1 .u-input-3 {
     height: 60px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    display: block;
+    text-align: left;
   }
 
   .u-section-1 .u-form-4 {
@@ -669,7 +674,7 @@ body {
     -webkit-appearance: none;
     -moz-appearance: none;
     display: block;
-    text-align: right;
+    text-align: left;
   }
 
   .u-section-1 .u-form-4 {
