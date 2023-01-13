@@ -27,7 +27,7 @@ body {
 
 .u-dialog-section-4 .u-container-layout-1 {
   padding: 30px;
-}.u-section-1 .u-image-1
+}
 
 .u-dialog-section-4 .u-image-1 {
   width: 366px;
@@ -278,7 +278,19 @@ body {
     margin-right: calc(((100% - 720px) / 2) + 201px);
   }
 }
+@media (max-width: 767px) {
+  .u-section-1 .u-image-1 {
+    height: 554px;
+    width: 343px;
+    margin-top: -55%;
+    top: 584px;
+    margin-left: auto;
+    margin-right: auto;
 
+  }
+
+
+}
 /* @media (max-width: 767px) {
   .u-dialog-section-4 .u-dialog-1 {
     width: 540px;
