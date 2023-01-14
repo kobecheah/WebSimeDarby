@@ -1,16 +1,16 @@
 body {
-  height: 150%;
+  height: 180%;
   overflow-y: hidden;
   overflow: hidden;
   overscroll-behavior: none;
   overscroll-behavior-y: none;
-
 }
 .WrapBody {
   background-image: url('./images/Background_After home page.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
+  background-attachment: fixed;
 }
 .u-section-1 .u-sheet-1 {
   min-height: 1461px;
