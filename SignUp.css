@@ -269,7 +269,7 @@ body {
 @media (max-width: 2000px) {
 
   .WrapBody {
-    height: 180%;
+    height: 200%;
   }
 
   .u-section-1 .u-image-1 {
@@ -486,7 +486,7 @@ body {
 
 @media (max-width: 767px) {
   .WrapBody {
-    height: 100%;
+    height: 200%;
   }
   .u-dialog-section-4 .u-container-layout-1 {
     display: block;
@@ -613,7 +613,7 @@ body {
 
 @media (max-width: 576px) {
   .WrapBody {
-    height: 150%;
+    height: 160%;
   }
   .error-message-agreeError{
     left: 29px;
@@ -625,6 +625,7 @@ body {
   .u-section-1 .u-image-1 {
     margin-bottom: -779px;
     height: 782px;
+    margin-top: 35px;
   }
 
   .u-section-1 .u-image-2 {
