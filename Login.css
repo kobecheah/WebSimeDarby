@@ -1,5 +1,5 @@
 body {
-  height: 120%;
+  height: 100%;
   overflow-y: hidden;
   overflow: hidden;
   overscroll-behavior: none;
@@ -7,11 +7,9 @@ body {
 }
 .WrapBody {
   background-image: url('./images/Background_Registration page.png');
-  background-attachment:scroll;
+  background-attachment:local;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 125%;
-  width: 100%;
   background-position: top;
 
 }
