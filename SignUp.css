@@ -855,3 +855,9 @@ body {
 .u-white>.u-container-layout:before {
   background-color: #00000000;
 }
+@media (max-height: 490px) {
+  .WrapBody {
+    height: 110%;
+    width: 110%;
+}
+}

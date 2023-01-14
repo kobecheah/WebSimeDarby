@@ -480,3 +480,9 @@ body {
     margin-bottom: 81px;
   }
 }
+@media (max-height: 490px) {
+  .WrapBody {
+    height: 110%;
+    width: 110%;
+}
+}
