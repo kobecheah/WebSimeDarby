@@ -134,4 +134,11 @@ body {
     margin-top: 146px;
     margin-bottom: 116px;
   }
+
+}
+@media (max-height: 490px) {
+  .WrapBody {
+    height: 110%;
+    width: 110%;
+}
 }

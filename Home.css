@@ -119,7 +119,12 @@ body {
     margin-bottom: 42px;
   }
 }
-
+@media (max-height: 490px) {
+  .WrapBody {
+    height: 110%;
+    width: 110%;
+}
+}
 @media (max-width: 575px) {
   .u-section-1 .u-sheet-1 {
   }
