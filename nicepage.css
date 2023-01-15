@@ -33539,7 +33539,7 @@ section.u-white:before,
 .u-container-layout.u-container-layout.u-white:before,
 .u-table-alt-white tr:nth-child(even) {
   color: #111111;
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
 }
 
 .u-button-style.u-white,
