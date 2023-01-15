@@ -544,6 +544,7 @@
   input[type="date"] {
     display: block;
     text-align: left;
+    
   }
 
   input[type=date]:focus {
@@ -562,6 +563,19 @@
     border: 2px solid #d48300;
     text-align: left;
   }
+  
+  input[type="text"] {
+    display: block;
+    text-align: left;
+  }
+  input[type=text]::before {
+    text-align: left;
+  }
+
+  input[type=text]:focus-within {
+    text-align: left;
+  }
+
 
   input[type=checkbox]:checked:before {
 
