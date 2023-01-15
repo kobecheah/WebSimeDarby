@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover">
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>Update Your Android Version</title>
+    <link rel="stylesheet" href="nicepage.css" media="screen">
+    <link rel="stylesheet" href="UpdateIos.css" media="screen">
+    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+    <meta name="generator" content="Nicepage 4.21.12, nicepage.com">
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link id="u-theme-google-font" rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="UpdateIos">
+    <meta property="og:type" content="website">
+</head>
+
+<body class="u-body u-xl-mode" data-lang="en">
+    <div id='treasure-hunt-content' style="display: block">
+        <section class="u-clearfix u-section-1" id="sec-5a8b">
+            <img class="u-expanded-width-xs u-image u-image-contain u-image-default u-image-1"
+                src="images/updateiosbgframe.png" alt="" data-image-width="904" data-image-height="808">
+            <img class="u-image u-image-contain u-image-default u-image-2" src="images/erroricon.png" alt=""
+                data-image-width="276" data-image-height="248">
+            <!-- <img onclick="BackLoginPage()" class="u-image u-image-default u-image-3" src="images/clicktoplaybutton.png" alt=""
+        data-image-width="394" data-image-height="122"> -->
+            <div class="u-image u-image-default u-image-3"></div>
+            <h6 class="u-text u-text-1">Sorry, your browser is not supported</h6>
+            <h6 class="u-align-center-md u-align-center-sm u-align-center-xs u-text u-text-2">To use this webapp, you
+                will need Android 7 (or above). <br /><br />
+                If you're having trouble, you can try accessing it with a different browser by copying the link below.
+            </h6>
+            <div class="copy-frame" onclick="Copy(this);">
+                <input type="readonly" value="https://sekingo.visitsekinchan.com/" />
+            </div>
+        </section>
+    </div>
+    <script src="./deviceOrientationHandler.js"></script>
+</body>
+<style>
+    input[type=email]:focus {
+        border: 2px solid #fc6130;
+    }
+
+    input[type=password]:focus {
+        border: 2px solid #fc6130;
+    }
+
+    .u-image-3:hover {
+        -webkit-filter: brightness(80%);
+    }
+</style>
+
+</html>
+<script>
+
+    function Copy(e) {
+        var copyText = e.querySelector("input");
+
+        // Select the text field
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); // For mobile devices
+
+        // Copy the text inside the text field
+        navigator.clipboard.writeText(copyText.value);
+
+        // Alert the copied text
+        $(e).after('<p style="color:green;text-align:center;margin-top:-15px;" id="copy-success">Copied successfully.</p>');
+        setTimeout(function() {
+            $(e).next('p').fadeOut();
+            setTimeout(function() {
+                $(e).next('p').remove();
+            }, 1000);
+        }, 1000);
+    }
+    
+</script>

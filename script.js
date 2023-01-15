@@ -29,10 +29,12 @@ function getCookie(cname) {
 
 function storeParams() {
     const urlParams = new URLSearchParams(window.location.search);
-    if (urlParams.has('station')) {
-        let stationId = urlParams.get('station');
-        sessionStorage.setItem("params", '?station=' + stationId);
-    }
+    // if (urlParams.has('station')) {
+    //     let stationId = urlParams.get('station');
+    //     sessionStorage.setItem("params", '?station=' + stationId);
+    // }
+    if(urlParams != null && urlParams != '')
+        sessionStorage.setItem("params", '?'+urlParams);
 }
 
 function openMapNavBar(locationCoordinate) {
@@ -107,6 +109,11 @@ istab = function () {
         window.location.href = "./PhoneValidate.html";
     }
 }
+
+function openLink() {
+    window.location.href = ("https://www.simedarbyproperty.com/cny2023/");
+}
+
 window.onload = onload();
 
 function onload() {
