@@ -33533,13 +33533,12 @@ a.u-link.u-hover-grey-light-3:hover {
 .u-white,
 .u-body.u-white,
 section.u-white:before,
-.u-white>.u-container-layout:before,
 .u-white>.u-inner-container-layout:before,
 .u-white.u-sidenav:before,
 .u-container-layout.u-container-layout.u-white:before,
 .u-table-alt-white tr:nth-child(even) {
   color: #111111;
-  /* background-color: #ffffff; */
+  background-color: #ffffff; 
 }
 
 .u-button-style.u-white,
