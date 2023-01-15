@@ -50,7 +50,7 @@
               style="padding: 0px;">
               <div class="u-form-group u-label-none">
                 <label for="name-e9a0" class="u-label"></label>
-                <input type="text" id="date-e9a0" name="dateofbirth"
+                <input type="text" id="date-e9a0" name="dateofbirth" pseudo="-webkit-datetime-edit"
                   class="u-border-1 u-border-grey-30 u-custom-font u-heading-font u-input u-input-rectangle u-radius-50 u-text-black u-white u-input-3"
                   required="required" max="31-12-2030" style="text-align: left; min-width: 100%;max-width: 100%;" placeholder="Date of Birth"
                   onmouseover="((this.type='date'))" onfocus="((this.type='date'))" onclick="(this.type='date')"
@@ -589,7 +589,9 @@
   input[type=number]:focus {
     border: 2px solid #d48300;
   }
-
+  ::-webkit-datetime-edit-year-field {
+    text-align: left;
+}
   .u-btn-1:hover {
     -webkit-filter: brightness(80%);
   }
