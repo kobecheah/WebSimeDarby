@@ -69,7 +69,7 @@
         }
       }
       //check ios version      
-      checkIosVersion();
+      //checkIosVersion();
       function checkIosVersion() {
         navigator.sayswho = (function(){
           var ua= navigator.userAgent;
@@ -143,11 +143,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/TreasureHuntARBuild.loader.js";
+      var loaderUrl = buildUrl + "/Build.loader.js";
       var config = {
-        dataUrl: buildUrl + "/TreasureHuntARBuild.data",
-        frameworkUrl: buildUrl + "/TreasureHuntARBuild.framework.js",
-        codeUrl: buildUrl + "/TreasureHuntARBuild.wasm",
+        dataUrl: buildUrl + "/Build.data",
+        frameworkUrl: buildUrl + "/Build.framework.js",
+        codeUrl: buildUrl + "/Build.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "TreasureHunt",
